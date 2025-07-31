@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoffeeLand - Smart Coffee Order</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">CoffeeLand</div>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-text">
+      <h1 class="typewriter">Your Daily Dose of Happiness</h1>
+      <p>Freshly brewed coffee made with love, just for you.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+<section class="about" id="about">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="https://images.pexels.com/photos/585750/pexels-photo-585750.jpeg" alt="About our coffee shop">
+    </div>
+    <div class="about-content">
+    <h2 class="typewriter">About Our Café</h2>
+      <p>
+        Welcome to <strong>Moon Coffee House</strong>, your cozy corner for the finest brews and warmest vibes. Since 2015,
+        we’ve been on a passionate mission to deliver not just coffee, but moments of comfort, creativity, and community.
+      </p>
+      <ul>
+        <li>☕ Ethically-sourced beans from Ethiopia, Colombia, and Brazil.</li>
+        <li>👨‍🍳 Expert baristas skilled in latte art and brewing techniques.</li>
+        <li>🌱 Eco-conscious practices with compostable materials.</li>
+        <li>📚 Book-exchange and weekly creative events.</li>
+        <li>🎵 Live acoustic sessions every Friday night.</li>
+        <li>🏆 Award-winning local café three years running.</li>
+      </ul>
+      <p>
+        Whether you're here for your morning espresso or an evening chat with friends, we’re here to make every visit special.
+        Come sip, relax, and be inspired.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="fade-in">
+    <h2>Our Menu</h2>
+   <div class="menu-grid">
+<div class="menu-grid"> 
+   <!-- Espresso --> 
+     <div class="coffee-item">
+    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Espresso">
+    <h3>Espresso</h3>
+    <p class="price">$2.99</p>
+    <p class="desc">
+      A bold and rich Italian classic, brewed under high pressure to deliver intense flavor in every sip.
+      Strong, aromatic, and perfect for a quick energy boost.
+      Served in a small cup, but powerful in taste.
+      Loved by coffee purists all around the world.
+    </p>
+    <button onclick="orderCoffee('Espresso', 2.99)">Order</button>
+  </div>  
+  <!-- Cappuccino --> 
+    <div class="coffee-item">
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Cappuccino">
+    <h3>Cappuccino</h3>
+    <p class="price">$3.49</p>
+    <p class="desc">
+      A delightful blend of espresso, steamed milk, and airy milk foam.
+      Creamy texture and balanced flavor make it a morning favorite.
+      Often dusted with cocoa or cinnamon on top.
+      Warm, comforting, and silky smooth with every sip.
+    </p>
+    <button onclick="orderCoffee('Cappuccino', 3.49)">Order</button>
+  </div> 
+   <!-- Latte --> 
+     <div class="coffee-item">
+    <img src="https://www.foodandwine.com/thmb/CCe2JUHfjCQ44L0YTbCu97ukUzA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Partners-Latte-FT-BLOG0523-09569880de524fe487831d95184495cc.jpg" alt="Latte">
+    <h3>Latte</h3>
+    <p class="price">$3.99</p>
+    <p class="desc">
+      Smooth espresso with generous steamed milk for a mellow, creamy taste.
+      Perfect choice for those who enjoy a gentle coffee experience.
+      Customize it with flavors like vanilla or caramel.
+      Ideal for relaxing afternoons or study breaks.
+    </p>
+    <button onclick="orderCoffee('Latte', 3.99)">Order</button>
+  </div>  
+  <!-- Mocha -->  
+   <div class="coffee-item">
+    <img src="download (1).jpeg" alt="Mocha">
+    <h3>Mocha</h3>
+    <p class="price">$4.29</p>
+    <p class="desc">
+      A sweet fusion of chocolate and espresso, topped with whipped cream.
+      Rich and indulgent, perfect for dessert lovers.
+      Combines the depth of coffee with the comfort of cocoa.
+      A cozy favorite during colder months.
+    </p>
+    <button onclick="orderCoffee('Mocha', 4.29)">Order</button>
+  </div>  
+  <!-- Flat White --> 
+    <div class="coffee-item">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNzGq0ZvOPvMg9OCxLWMqmBAhtHdCnD9SeqA&s" alt="Flat White">
+    <h3>Flat White</h3>
+    <p class="price">$3.75</p>
+    <p class="desc">
+      Velvety microfoam over a double shot of espresso.
+      Silky and strong, yet smoother than a cappuccino.
+      Originated in Australia and New Zealand.
+      A minimalist favorite for true coffee fans.
+    </p>
+    <button onclick="orderCoffee('Flat White', 3.75)">Order</button>
+  </div>  
+  <!-- Cold Brew -->
+     <div class="coffee-item">
+    <img src="download.jpeg" alt="Cold Brew">
+    <h3>Cold Brew</h3>
+    <p class="price">$4.49</p>
+    <p class="desc">
+      Slow-steeped coffee served chilled for smooth, low-acid flavor.
+      Refreshing, bold, and less bitter than traditional iced coffee.
+      Best enjoyed on hot summer days.
+      Can be sweetened or infused with vanilla or citrus.
+    </p>
+    <button onclick="orderCoffee('Cold Brew', 4.49)">Order</button>
+  </div>
+</div>
+  </section>
+<form class="contact-form" onsubmit="handleContact(event)">
+  <input type="text" placeholder="Your Name" required />
+  <input type="email" placeholder="Your Email" required />
+  <textarea placeholder="Your Message" rows="5" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+  <!-- Footer Section -->
+<footer class="footer">
+  <h3>Contact us on social media</h3>
+  <div class="social-icons">
+    <a href="0702079302" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="@nazarisara" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+    <a href="https://x.com/nazarisara554?t=fdb7lDl1rR9wIFKGSrPVRA&s=09" target="_blank" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/sara-nazari-264554334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com/saranazari1234" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+  <p class="footer-note">&copy; Coffee CoffeeLand. All rights reserved.</p>
+</footer>
+
+  <script src="script.js">
+
+  </script>
+</body>
+</html>
